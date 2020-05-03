@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SubOnlySpigot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SubOnlySpigot_jar</output-path>
+    <root id="archive" name="SubOnlySpigot.jar">
+      <element id="module-output" name="SubOnlySpigot" />
+    </root>
+  </artifact>
+</component>

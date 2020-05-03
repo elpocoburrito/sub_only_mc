@@ -1,0 +1,6 @@
+name: Subonly
+version: ${project.version}
+main: elpocoburrito.subonly.Subonly
+api-version: 1.13
+authors: [ElPocoBurrito]
+description: Prevent players that are not verified and subbed from playing when jeannie is streaming minecraft
