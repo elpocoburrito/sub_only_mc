@@ -1,14 +1,8 @@
 package elpocoburrito.subonly;
 
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Objects;
 
 public final class Subonly extends JavaPlugin {
     private boolean isStreaming = false;
@@ -23,7 +17,7 @@ public final class Subonly extends JavaPlugin {
         if (this.getServer().getPluginManager().getPermission("subonly.subbed") == null) {
             this.getServer().getPluginManager().addPermission(new Permission("subonly.subbed"));
         }
-        this.getServer().getPluginManager().registerEvents(new PlayerAllowedMoveEvent(this),this);
+        this.getServer().getPluginManager().registerEvents(new PlayerEventHandlers(this),this);
     }
 
     @Override
